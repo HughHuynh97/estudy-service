@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/qat
+    username: user
+    password: 1234qwer
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop   # options: create, create-drop, update, validate, none
+    show-sql: true       # to show SQL statements in the console
+    properties:
+      hibernate:
+        format_sql: true # formats the SQL statements
+        dialect: org.hibernate.dialect.MySQLDialect  # specify the dialect according to your DB
